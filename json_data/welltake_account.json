@@ -1,0 +1,10 @@
+{
+	"welltake_account": {
+		"user": "Test_TT.User",
+		"password": "abcdeABCDE1234"
+	},
+	"welltake_domain_name": {
+		"at": "@",
+		"email": "welltake.com.tw"
+	}
+}

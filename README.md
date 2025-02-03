@@ -12,6 +12,9 @@
         * 非英文字母字元 (例如: !、$、#、%)
 ---
 ## 更新日誌
+* 2025/02/03
+    * **first commit**
+    * **完成 Initialization 部分**
 ---
 ## 參考資料
 * [ASCII可顯示字元（共95個）](https://zh.wikipedia.org/zh-tw/ASCII#%E5%8F%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6)
