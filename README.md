@@ -15,6 +15,8 @@
 * 2025/02/03
     * **first commit**
     * **完成 Initialization 部分**
+* 2025/02/04
+    * **新增 passwordGenerator_module.rb**
 ---
 ## 參考資料
 * [ASCII可顯示字元（共95個）](https://zh.wikipedia.org/zh-tw/ASCII#%E5%8F%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6)

@@ -1,5 +1,6 @@
 $LOAD_PATH << '.'
 require "jsonInitialization_module"
+require "passwordGenerator_module"
 
 def initialization user, password
     include JsonInitialization_Module
@@ -9,7 +10,8 @@ def initialization user, password
 end
 
 def password_generator passwordLength
-
+    include PasswordGenerator_Module
+    pwdGenerator = PasswordGenerator_Module::PasswordGenerator_Class.new
 end 
 
 def update_json password
