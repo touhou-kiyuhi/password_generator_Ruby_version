@@ -5,20 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "ruby_lsp",
-            "name": "Debug script",
-            "request": "launch",
-            "program": "ruby ${file}"
+            "type": "rdbg",
+            "name": "Attach rdbg",
+            "request": "attach"
         },
         {
-            "type": "ruby_lsp",
-            "name": "Debug test",
+            "type": "rdbg",
+            "name": "Debug current file with rdbg",
             "request": "launch",
-            "program": "ruby -Itest ${relativeFile}"
+            "script": "${file}",
+            "args": [],
+            "askParameters": true
         },
         {
-            "type": "ruby_lsp",
-            "name": "Attach debugger",
+            "type": "rdbg",
+            "name": "Attach with rdbg",
             "request": "attach"
         }
     ]
