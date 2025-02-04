@@ -1,10 +1,9 @@
 $LOAD_PATH << '.'
-require "jsonInitialization_module"
+require_relative "jsonInitialization"
 require_relative "passwordGenerator"
 
 def initialization user, password
-    include JsonInitialization_Module
-    init = JsonInitialization_Module::JsonInitialization_Class.new
+    init = JsonInitialization.new
     init.account_json_setup user, password
     init.passwords_json_backup password
 end

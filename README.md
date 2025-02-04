@@ -19,6 +19,7 @@
     * **新增 passwordGenerator_module.rb**
 * 2025/02/05
     * **新增 Passwords Generator 部分，修改部分命名**
+    * **修改 Initialization 部分，修改部分命名**
 ---
 ## 參考資料
 * [ASCII可顯示字元（共95個）](https://zh.wikipedia.org/zh-tw/ASCII#%E5%8F%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6)
