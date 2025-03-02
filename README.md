@@ -22,6 +22,7 @@
     * **修改 Initialization 部分，修改部分命名**
 * 2025/03/02
     * **完成 Update 部分 <br>修改整體結構 + 重新命名**
+    * **修正 main.rb 中的問題**
 ---
 ## 參考資料
 * [ASCII可顯示字元（共95個）](https://zh.wikipedia.org/zh-tw/ASCII#%E5%8F%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6)

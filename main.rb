@@ -5,8 +5,6 @@ require_relative "main_methods/update_json/UpdateOfJson"
 
 def initialization user, password
   init = Initialization_Of_Json.new 
-  user = "Test_TT.User"
-  password = "abcdeABCDE1234"
   init.setupAccountJson user, password
   init.backupPasswordsJson password
 end
@@ -18,8 +16,7 @@ def password_generator passwordLength
   puts password
 end 
 
-def update_json password
-  new_password = "edcbaEDCBA4321"
+def update_json new_password
   update = Update_Of_Json.new
   update.updateAccountJson new_password
   update.updateBackupJson new_password
