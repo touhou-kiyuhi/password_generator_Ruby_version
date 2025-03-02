@@ -157,8 +157,8 @@ class Password_Generator
 end
 
 if __FILE__ == $0
-  pwdGenerator = Password_Generator.new
-  pwdGenerator.setPassword 14
-  password = pwdGenerator.password
+  generator = Password_Generator.new
+  generator.setPassword 14
+  password = generator.password
   puts password
 end

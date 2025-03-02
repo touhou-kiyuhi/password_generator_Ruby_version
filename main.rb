@@ -10,9 +10,9 @@ def initialization user, password
 end
 
 def password_generator passwordLength
-  pwdGenerator = Password_Generator.new
-  pwdGenerator.setPassword 14
-  password = pwdGenerator.password
+  generator = Password_Generator.new
+  generator.setPassword 14
+  password = generator.password
   puts password
 end 
 
