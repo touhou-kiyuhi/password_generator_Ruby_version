@@ -20,6 +20,8 @@
 * 2025/02/05
     * **新增 Passwords Generator 部分，修改部分命名**
     * **修改 Initialization 部分，修改部分命名**
+* 2025/03/02
+    * **完成 Update 部分 <br>修改整體結構 + 重新命名**
 ---
 ## 參考資料
 * [ASCII可顯示字元（共95個）](https://zh.wikipedia.org/zh-tw/ASCII#%E5%8F%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6)
@@ -37,3 +39,4 @@
 * [Private Setter in Ruby](https://kaochenlong.com/2015/03/21/attr_accessor.html)
 * [attr_accessor 是幹嘛的？](https://kaochenlong.com/2015/03/21/attr_accessor.html)
 * [[Ruby] 物件、類別和模組](https://pjchender.dev/ruby-on-rails/ruby-object/)
+* [How to "pretty" format JSON output](https://stackoverflow.com/questions/86653/how-to-pretty-format-json-output)

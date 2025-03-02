@@ -1,9 +1,9 @@
 $LOAD_PATH << '.'
-require "jsonPath_abstractModule"
-require "jsonController_module"
+require "json_classes/settings/jsonSettings_module.rb"
+require "json_classes/controller/jsonController_module.rb"
 
 class Password_Generator
-  include JsonPath
+  include JsonSettings
   include JsonController
 
   # Getter
@@ -16,9 +16,9 @@ class Password_Generator
   # Constructor
   def initialize
     # 使用者名稱、備份密碼 元素
-    @account = JsonController.jsonReader JsonPath::ACCOUNT_PATH
+    @account = JsonController.jsonReader JsonSettings::ACCOUNT_PATH
     @userName = ""
-    @passwordsBackup = JsonController.jsonReader JsonPath::PASSWORDS_BACKUP_PATH
+    @passwordsBackup = JsonController.jsonReader JsonSettings::PASSWORDS_BACKUP_PATH
     @passwordsBackupElements = []
     # 密碼
     @passwordList = []
@@ -46,12 +46,12 @@ class Password_Generator
 
   # Setter
   def setUserName
-    @userName = @account["welltake_account"]["user"]
+    @userName = @account["account"]["user"]
   end
   # 備份密碼元素
   def setPasswordsBackupElements
     for i in 0...@passwordsBackup["length"]
-      password = @passwordsBackup["welltake_account_passwords"][i]["password"]
+      password = @passwordsBackup["account_passwords"][i]["password"]
       @passwordsBackupElements.push password
     end
   end

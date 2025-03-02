@@ -12,4 +12,8 @@ module JsonController
       f.write JSON.pretty_generate data, :indent => "\t"
     end
   end
+
+  def JsonController.jsonViewer data
+    puts JSON.pretty_generate(data)
+  end
 end

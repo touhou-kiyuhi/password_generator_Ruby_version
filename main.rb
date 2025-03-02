@@ -1,39 +1,45 @@
 $LOAD_PATH << '.'
-require_relative "jsonInitialization"
-require_relative "passwordGenerator"
+require_relative "main_methods/initialize_json/initializationOfJson"
+require_relative "main_methods/password_generator/passwordGenerator"
+require_relative "main_methods/update_json/UpdateOfJson"
 
 def initialization user, password
-    init = JsonInitialization.new
-    init.account_json_setup user, password
-    init.passwords_json_backup password
+  init = Initialization_Of_Json.new 
+  user = "Test_TT.User"
+  password = "abcdeABCDE1234"
+  init.setupAccountJson user, password
+  init.backupPasswordsJson password
 end
 
 def password_generator passwordLength
-    pwdGenerator = Password_Generator.new
-    pwdGenerator.setPassword 14
-    password = pwdGenerator.password
-    puts password
+  pwdGenerator = Password_Generator.new
+  pwdGenerator.setPassword 14
+  password = pwdGenerator.password
+  puts password
 end 
 
 def update_json password
-
+  new_password = "edcbaEDCBA4321"
+  update = Update_Of_Json.new
+  update.updateAccountJson new_password
+  update.updateBackupJson new_password
 end 
 
 def main
-    # Initialization
-    user = "Test_TT.User"
-    password = "abcdeABCDE1234"
-    initialization user, password
+  # Initialization
+  user = "Test_TT.User"
+  password = "abcdeABCDE1234"
+  initialization user, password
 
-    # Passwords Generator
-    passwordLength = 20
-    password_generator passwordLength
+  # Passwords Generator
+  passwordLength = 20
+  password_generator passwordLength
 
-    # To update the .json of the account and passwords_backup because we save them in json file
-    password = "edcbaEDCBA4321"
-    update_json password
+  # To update the .json of the account and passwords_backup because we save them in json file
+  password = "edcbaEDCBA4321"
+  update_json password
 end
 
 if __FILE__ == $0
-    main
+  main
 end
