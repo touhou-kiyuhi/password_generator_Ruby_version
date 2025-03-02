@@ -100,7 +100,7 @@ class Password_Generator
       setUpperAlphabets
       setLowerAlphabets
       setNumbers
-      
+      setSymbols
       setPasswordList
       @password = @passwordList.join(sep='')
       # 密碼不為空字串
@@ -156,9 +156,14 @@ class Password_Generator
   public :setPassword
 end
 
-if __FILE__ == $0
+def main passwordLength
   generator = Password_Generator.new
-  generator.setPassword 14
+  generator.setPassword passwordLength
   password = generator.password
   puts password
+end
+
+if __FILE__ == $0
+  passwordLength = 20
+  main passwordLength
 end

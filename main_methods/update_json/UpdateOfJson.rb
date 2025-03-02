@@ -23,7 +23,7 @@ class Update_Of_Json
   def updateBackupJson new_password
     dataExistedFlag = checkNew_passwordInBackupDataPasswordsList new_password
     if dataExistedFlag
-      puts "the password exists in the data_backup"
+      puts "the password exists in the @backupData"
     else
       # 新增密碼到備份密碼
       new_data = {
@@ -52,9 +52,13 @@ class Update_Of_Json
   end
 end
 
-if __FILE__ == $0 
-  new_password = "edcbaEDCBA4321"
+def main new_password
   update = Update_Of_Json.new
   update.updateAccountJson new_password
   update.updateBackupJson new_password
+end
+
+if __FILE__ == $0 
+  new_password = "edcbaEDCBA4321"
+  main new_password
 end

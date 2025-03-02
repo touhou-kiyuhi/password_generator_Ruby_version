@@ -44,10 +44,14 @@ class Initialization_Of_Json
   end
 end
 
-if __FILE__ == $0
+def main user, password
   init = Initialization_Of_Json.new 
-  user = "Test_TT.User"
-  password = "abcdeABCDE1234"
   init.setupAccountJson user, password
   init.backupPasswordsJson password
+end
+
+if __FILE__ == $0
+  user = "Test_TT.User"
+  password = "abcdeABCDE1234"
+  main user, password
 end

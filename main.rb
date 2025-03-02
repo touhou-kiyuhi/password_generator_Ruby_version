@@ -11,7 +11,7 @@ end
 
 def password_generator passwordLength
   generator = Password_Generator.new
-  generator.setPassword 14
+  generator.setPassword passwordLength
   password = generator.password
   puts password
 end 
